@@ -1,3 +1,4 @@
+import TaskFour_PhoneAndNetwork.*;
 import TaskOne_Cat.Cat;
 import TaskTwo_Triangle.Triangle;
 import TaskThree_Vector3d.Vector3d;
@@ -21,6 +22,17 @@ public class Main {
         Vector3d vector3dOne=new Vector3d(20,10,15);
         System.out.println(vector3d.addition(vector3dOne));
         System.out.println(vector3d.dotProduct(vector3dOne));
+
+        //4)
+        NetWork netWork= new NetWork();
+        Phone phone=new Phone("+380678644997");
+        System.out.println(phone.registration(netWork));
+        System.out.println(phone.registration(netWork));
+        Phone phoneOne=new Phone("+389998887890");
+        System.out.println(phoneOne.registration(netWork));
+        System.out.println(phone.call(netWork,phoneOne));
+        Phone phoneTwo=new Phone("+380000000000");
+        System.out.println(phoneOne.call(netWork,phoneTwo));
 
 
 
